@@ -1,0 +1,100 @@
+\section{Auswertung der Messungen bei 25$^\circ$C}
+
+Mit den erhalten Messwerten aus Teil 1 kann jetzt die Konzentrationsabhängigkeit der Essigsäure im Hinblick auf:
+
+\begin{itemize}
+    \item den mittleren Aktivitätskoeffizient $\gamma_\pm$
+    \item den Dissoziationsgrad $\alpha$
+    \item und den Debye-Radius (\textbf{rD})
+\end{itemize}
+
+untersucht werden.
+
+\subsection{Bestimmung der Aktivitätskoeffizienten $\gamma_\pm$ bei 25$^\circ$C}
+
+Um dem Phänomen des schwachen Elektrolyten rechnung zu tragen, bei dem nur ein geringer Teil der Essigsäuremoleküle dissoziiert und ein $H^+$ abgibt,
+wurde die Aktivität $a$ eingeführt. Dieser Wert sagt aus, wie viele Moleküle wirklich regieren. 
+Da wir über die pH-Messung den negativen dekadischen Logarithmus der $H^+$-Ionenkonzentration in Lösung bestimmt haben, erhalten wir durch potenzieren
+zur Basis 10 genau die Zahl an Teilchen, die in unserer Lösung dissoziiert ist.
+
+\begin{align}
+    a = 10^{pH-Wert}
+\end{align} 
+
+Da mit $a$ immer nur der absoluten Zahlenwert für eine ganz bestimmte Lösung bestimmt werden kann, wurde der mittlere Aktivitätskoeffizient $\gamma_\pm$
+eingeführt, da dieser jetzt das Verhältnis zwischen der reagierten Spezies und der eingesetzten Konzentration berechnet, bekommt man immer das
+gleiche Ergebnis auch wenn man das System vergrößert oder verkleinert.
+
+\begin{align}
+    \gamma_\pm = \frac{a}{c} = \frac{a}{b}
+\end{align}
+
+Da unsere Konzentrationen in Molalität statt in Molarität gegeben sind wird Anstell $c$ $b$ für die Konzentration eingesetzt. \\
+Für den prozentualen Anteil an dissoziierten Teilchen wird noch $\alpha$ mit:
+
+\begin{align}
+    \alpha[\%] = \gamma_\pm *100
+\end{align}
+
+eingeführt.
+
+\input{../src/tabellen/tabelle3.tex} 
+
+Indem man die Konzentration gegen den prozentualen Aktivitätskoeffizienten aufträgt und beide logarithmiert, bekommt man einen Graph, der 
+eine linearen Zusammenhang zwischen der Konzentration und der Aktivität nahelegt. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/graph1_25C.png}
+    \caption{Bestimmung von $\gamma_\pm$ bei 25$^\circ$C}
+\end{figure}
+
+Desweiteren kann man aus der Geradengleichung erkennen, dass je geringer die Konzentration der Lösung ist, desto höher ist gleichzeitig
+die prozentuale Aktivität, oder anders ausgedrückte - je geringer die Konzentration, desto mehr Teilchen dissoziieren.
+Mit diesem Zusammenhang, kann man auch aus der schwachen Säure HAC bei genügend hoher Verdünnung eine starke machen. \\
+Eine starke Säure ist dann stark, wenn sie vollständig dissoziiert, also wenn $\alpha[\%] = 100$ ist. Dies kann mit der Geradengleichung der
+Regressionsgerade bestimmt werden.
+
+\begin{align*}
+    log(\alpha) &= -0,4539 \, \log(c) - 0,28 \\
+    10 &= -0,4539 \, \log(c) - 0,28  \\
+    c &= 10^{-23.03} = 2.25 \cdot 10^{-23} \, [mol/kg]
+\end{align*}
+
+Bei einer Konzentration von $2.25 \cdot 10^{-23} \, [mol/kg]$ würde Essigsäure bei 25$^\circ$C vollständig dissoziieren.
+
+\subsection{Debye-Radius bei 25$^\circ$C}
+
+Der Debye-Radius gibt an, ab welcher Distanz nur noch $\frac{1}{e}$ der Coulomb-Kraft wirkt und er wird berechnet über:
+
+\begin{align*}
+    r_D &= \sqrt{ \frac{\epsilon _0 \epsilon _{rel} k_B T}{2N_A e^2 I}} \\
+    k_B &= \frac{R}{N_A} \\
+    F &= N_A e
+\end{align*}
+
+\begin{align}
+    r_D = \sqrt{ \frac{\epsilon _0 \epsilon _{rel} R T}{2 F^2 I}}
+\end{align}
+
+Für die Ionenstärke $I = \frac{1}{2} \sum c_i z_i^2$ wir statt c die Aktivität a eingesetzt und da Essigsäure zu gleichen Teilen zerfällt
+ist $I = \frac{1}{2} (2 \cdot a) = a$. Unter der Annahme, dass die Konzentration  viel geringer als der Aktivitätskoeffizient ist kann man
+($I = a = \gamma _\pm \cdot b = b$) die Ionenstärke in nächster Näherung mit der Molalität b gleichsetzen.
+
+\input{../src/tabellen/tabelle4.tex} 
+
+Um den Zusammenhang zwischen Konzentration und Debye-Radius zu verdeutlichen wurde in Abbildung 2 der logarithmiert rD gegen die logarithmiert Molalität
+aufgetragen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/graph2_25C.png}
+    \caption{Debye-Radius bei 25$^\circ$C}
+\end{figure}
+
+Wie vorher bei der Dissoziation, erhöht sich auch der Debye-Radius bei geringerer Konzentration. Dies kann man sich durch eine einfache 
+Überlegung erklären:
+\begin{quote}
+    Bei geringerer Konzentration sind die Essigsäuremoleküle nicht so nah beisammen, sie werden also weniger stark abgeschirmt.
+\end{quote}
+

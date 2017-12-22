@@ -1,0 +1,27 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Abstract}{2}
+\contentsline {section}{\numberline {2}Messungen}{2}
+\contentsline {subsection}{\numberline {2.1}Verwendete Ger\IeC {\"a}te und Chemikalien}{2}
+\contentsline {subsection}{\numberline {2.2}Erstellung der Stamml\IeC {\"o}sungen}{2}
+\contentsline {subsection}{\numberline {2.3}Erstellung der Messreihen}{3}
+\contentsline {section}{\numberline {3}Auswertung der Messungen bei 25$^\circ $C}{4}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der Aktivit\IeC {\"a}tskoeffizienten $\gamma _\pm $ bei 25$^\circ $C}{4}
+\contentsline {subsection}{\numberline {3.2}Debye-Radius bei 25$^\circ $C}{5}
+\contentsline {section}{\numberline {4}Auswertung der Messungen bei 40$^\circ $C}{7}
+\contentsline {subsection}{\numberline {4.1}Bestimmung der Aktivit\IeC {\"a}tskoeffizienten $\gamma _\pm $ bei 40$^\circ $C}{7}
+\contentsline {subsection}{\numberline {4.2}Debye-Radius bei 40$^\circ $C}{8}
+\contentsline {section}{\numberline {5}Datenanalyse}{10}
+\contentsline {subsection}{\numberline {5.1}Bestimmung der Unterschiede des Debye-Radius im Hinblick auf die Temperatur}{11}
+\contentsline {subsection}{\numberline {5.2}Datenanalyse f\IeC {\"u}r die Graphiken der Dissoziation}{13}
+\contentsline {subsubsection}{\numberline {5.2.1}Auswertung der Messwerte bei 25$^\circ $C}{13}
+\contentsline {subsubsection}{\numberline {5.2.2}Auswertung der Messwerte bei 40$^\circ $C}{14}
+\contentsline {subsubsection}{\numberline {5.2.3}Vergleich der Dissoziationen bei verschiedenen Temperaturen}{15}
+\contentsline {section}{\numberline {6}Diskussion}{17}
+\contentsline {subsection}{\numberline {6.1}Messreihe}{17}
+\contentsline {subsection}{\numberline {6.2}Dissoziation von Essigs\IeC {\"a}ure}{17}
+\contentsline {subsection}{\numberline {6.3}Debye-Radius}{17}
+\contentsline {subsection}{\numberline {6.4}Temperatureinfluss auf die Dissoziation und den Debye-Radius}{17}
+\contentsline {subsubsection}{\numberline {6.4.1}Debye-Radius}{17}
+\contentsline {subsubsection}{\numberline {6.4.2}Dissoziation}{17}
+\contentsline {section}{\numberline {7}Literatur}{18}
+\contentsline {section}{\numberline {8}Materialien}{18}

@@ -1,0 +1,11 @@
+/node_modules
+*.js
+*.json
+/main/*.log
+/main/*.fdb_latexmk
+/main/*.fls
+/main/*.aux
+/main/main.toc
+/main/*.synctex.gz
+*/**/*.log
+/.vscode

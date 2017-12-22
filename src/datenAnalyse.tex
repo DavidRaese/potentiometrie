@@ -1,0 +1,137 @@
+\section{Datenanalyse}
+
+Um Aussagen über Zusammenhänge zwischen zwei Größen zu treffen, wurden bis jetzt immer nur die Geradengleichungen der Regressionsgeraden benutzt.
+Das Problem dabei ist, dass wir nur einen Mittelwert haben, aber nicht wissen, wie stark unsere Werte streuen, also wie präzise sie sind.
+Weiter kann man mit der Datenanalyse noch bestimmen, wie sauber gearbeitet wurde und ob das verwendete Verfahren für das Problem gute Messergebnisse
+liefert. \\
+Um die Streuung der Daten zu berechnen verwendet man die Residuenanalyse. Dabei wird die errechnete Geradengleichung genommen, welche durch den
+Datensatz läuft und berechnet dann die mittlere Abweichung der einzelnen Datenpunkte zu der Geraden. \\
+Mit der Residuenanalyse werden die Datensätze zu Abbildung 2 und 4 untersucht.
+
+\begin{enumerate}
+    \item Bestimmung der Geradengleichung
+    \input{../src/tabellen/tabelle1_vergleich.tex}
+    \item Residuen Berechnen über:
+    \input{../src/tabellen/tabelle2_vergleich.tex}
+    \item Standardabweichung der Residuen bestimmen:
+        \begin{itemize}
+            \item Die Standardabweichung bei 25$^\circ$C ist $\sigma_{25} = \pm 1,636 \cdot 10^{-16}$
+            \item Die Standardabweichung bei 40$^\circ$C ist $\sigma_{40} = \pm 2,1992 \cdot 10^{-16}$
+        \end{itemize}
+\end{enumerate} 
+
+Bei diesen extrem kleinen Standardabweichungen kann davon Aussagen werden, dass keine Fehler bei der Durchführung aufgetreten sind und es 
+eigentlich keinen Sinn macht die Ergebnisse mit Standardabweichung anzugeben. 
+Wenn man den Graphen von dem Debye-Radius gegen die logarithmierte Konzentration mit Standardabweichung zeichnet, sieht man nur einen Datensatz,
+da die Streuung so klein ist.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/graph3_25C.png}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/graph3_40C.png}
+\end{figure}
+
+
+\subsection{Bestimmung der Unterschiede des Debye-Radius im Hinblick auf die Temperatur}
+
+Um zu bestimmen, welchen Einfluss die Temperatur auf den Debye-Radius hat, teilt man die entsprechenden Werte der einen Temperatur durch die der
+andern. Als nächstes kann dann noch der prozentuale Unterschied bestimmt werden, dafür wird von dem vorher berechneten Verhältnis 1 abgezogen und
+dann mit 100 multipliziert.
+
+\input{../src/tabellen/tabelle3_vergleich.tex}
+
+Wie man aus der Tabelle entnehmen kann, verändert sich der Anstieg der Werte so gut wie nicht. Dies ist aber auch zu
+erwarten, da die Steigungen der Regressionsgeraden gleich sind ($m = -0.5$).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/graph1_vergleich.png}
+    \caption{Debye-Radius im Hinblick auf die Temperatur}
+\end{figure}
+
+Es lässt sich kein Zusammenhang zwischen der Temperatur und dem Anstieg des Debye-Radius mit der Konzentration zeigen. Obwohl anzunehmen wäre
+das der Debye-Radius mit erniedrigung der Temperatur umso schneller wächst, je geringer Temperatur ist. Wenn man also noch den prozentualen
+Verlauf visualisiert, sollte man einen  positiven linearen Zusammenhang erkennen können.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/graph2_vergleich.png}
+    \caption{Debye-Radius im Hinblick auf die Temperatur}
+\end{figure}
+
+Wie man der Datenverteilung entnehmen kann ist dies nicht der Fall, es fällt aber auf, dass die y-Achse sich nicht ändert, sie zeigt immer den 
+gleichen Wert an. Möglicherweise sind die Werte zu klein und Excel kann sie nicht mehr darstellen. Da hier dem ersten Anschein nach etwas falsch ist
+werde ich versuche die Methodik zu überprüfen indem ich die gleiche Datenanalyse für die Werte der Dissoziation durchexerziere.
+
+\subsection{Datenanalyse für die Graphiken der Dissoziation}
+
+\subsubsection{Auswertung der Messwerte bei 25$^\circ$C}
+
+Für die Berechnung der Residuen erhält man folgende Werte:
+
+\input{../src/tabellen/alpha_25C.tex}
+
+Daraus ergibt sich folgende Graphik:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/residuen_25C.png}
+    \caption{Auswertung der Messwerte bei 25$^\circ$C}
+\end{figure}
+
+Die Standardabweichung beträgt $\sigma = \pm 0.018$. Somit ist die Geradengleichung gegeben durch:
+
+\begin{align*}
+    y = -0.4539 x - 0.28 \pm 0.018
+\end{align*}
+
+\subsubsection{Auswertung der Messwerte bei 40$^\circ$C}
+
+Für die Residuen ergeben sich diesmal: 
+
+\input{../src/tabellen/alpha_40C.tex}
+
+Und daraus ergibt sich folgende Graphik 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/residuen_40C.png}
+    \caption{Auswertung der Messwerte bei 40$^\circ$C}
+\end{figure}
+
+Die Standardabweichung beträgt $\sigma = \pm 0.016$. Somit ist die Geradengleichung gegeben durch:
+
+\begin{align*}
+    y = -0.4558 x - 0.32 \pm 0.016
+\end{align*}
+
+
+\subsubsection{Vergleich der Dissoziationen bei verschiedenen Temperaturen}
+
+Wie bei dem Vergleich der Debye-Radien wird auch hier der Quotient und das daraus bestimmte prozentuelle Verhältnis hinsichtlich der Temperatur untersucht. 
+Berechnet wurde hiefür folgendes:
+
+\input{../src/tabellen/alpha_vergleich.tex}
+
+Aus diesen Werten lassen sich diese beiden Grafiken generieren.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/alpha_quotient.png}
+    \caption{Vergleich der Dissoziationen bei verschiedenen Temperaturen}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.7]{../src/img/alpha_prozent.png}
+    \caption{Vergleich der Dissoziationen bei verschiedenen Temperaturen}
+\end{figure}
+
+Aus den Graphiken geht ein deutlicher linearer Zusammenhang hervor. Er zeigt, dass je kleiner die Konzentration ist, desto schneller steigt
+die Dissoziation bei höheren Temperaturen. Desweiteren zeigt sich, dass die Berechnungen bei der Analyse des Debye-Radius korrekt waren und
+es sich wahrscheinlich um einen Fehler inm excel-File handelt, welcher nicht gefunden wurde.   
+

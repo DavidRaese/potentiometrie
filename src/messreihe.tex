@@ -1,0 +1,65 @@
+\section{Messungen}
+
+\subsection{Verwendete Geräte und Chemikalien}
+\vspace{.5cm}
+\begin{minipage}[H][3cm][t]{0.4\textwidth}
+  \textbf{Chemikalien}
+  \begin{itemize}
+    \item Rotipuran (Essigsäure der Firma Roth, mit genau bestimmter Molalität)
+    \item Destilliertes Wasser
+  \end{itemize}
+\end{minipage}
+\begin{minipage}[H][3cm][t]{0.4\textwidth}
+  \textbf{Geräte}
+  \begin{itemize}
+    \item Waage: Kern KB
+    \item Wasserbad: Julabo 26
+    \item pH-Meter: Mettler Toledo Seven Multi
+  \end{itemize}
+\end{minipage}
+
+\subsection{Erstellung der Stammlösungen}
+Um die Messreihen zu erstellen, die eine Konzentrationsbereich von 0.005 bis 0.00001 [mol/kg]
+abdeckt, wurde aus einer 0.5 molalen Essigsäurelösung 3 Stammlösungen hergestellt.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Stammlösungen, aus 0.5molaler Essigsäure}
+      \begin{tabular}{lr}
+      \toprule
+      \textbf{Stammlösung} & \multicolumn{1}{l}{\textbf{Konz [mmol/kg]}} \\
+      \midrule
+      I     & 50,012 \\
+      II    & 5,015 \\
+      III   & 0,5012 \\
+      \bottomrule
+      \end{tabular}%
+    \label{tab:addlabel}%
+\end{table}%
+  
+Aus diesen Stammlösungen wurde im nächsten Schritt die Messreihe erstellt.
+
+\input{../src/tabellen/tabelle1.tex}
+
+
+\subsection{Erstellung der Messreihen}
+
+Die Messserie wurde in drei Teile aufgeteilt, entsprechend den drei Stammlösungen.
+Desweiteren wurde darauf geachtet, dass sich keine Konzentration mehr als einmal 
+wiederholt. \\ Über diese beiden gleichen Konzentrationen kann man auch überprüfen, ob
+die rechnerisch bestimmten Stammlösungen auch experimentell richtig sind. \\
+Da die Konzentrationen eingewogen wurden und die Einwaagen von den idealen Werten abweichen, muss die reale Konzentration
+noch aus den realen Einwaagen bestimmt werden.
+
+\begin{align}
+  b = \frac{Einwage \, Stamm [g] \cdot Konz. \, Stamm [g/mmol]}{Einwage \, Stamm + Einwage \, H_2O}
+\end{align}
+
+Für die Werte siehe Tabelle 2.
+
+\input{../src/tabellen/tabelle2.tex}
+
+Nach der Herstellung wurden die verschieden Konzentration mittels pH-Meter jeweils einmal bei
+25$^\circ$C und bei 40$^\circ$C vermessen, dabei wird immer von der kleineren zu nächst höheren Konzentration gemessen.
+Durch diese Methodik kann schnell gemessen werden ohne die Konzentration zu ändern.
+
